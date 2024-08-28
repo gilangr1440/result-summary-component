@@ -1,0 +1,275 @@
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+.main-content .container {
+  display: flex;
+  flex-direction: column;
+  font-family: "HankenGrotesk";
+  height: 100%;
+}
+.main-content .container .result {
+  padding: 25px 25px 40px 25px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 30px 30px;
+  height: 45%;
+  box-sizing: border-box;
+}
+.main-content .container .result-title {
+  text-align: center;
+  font-size: large;
+  color: hsl(241, 100%, 89%);
+  font-weight: 600;
+}
+.main-content .container .result-cycle {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 27px auto;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+}
+.main-content .container .result-cycle-grade-number {
+  font-size: 48px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 13px;
+}
+.main-content .container .result-cycle-of-grade-number {
+  color: #9694ff;
+  font-size: 13px;
+}
+.main-content .container .result-grade {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+.main-content .container .result-desc {
+  width: 80%;
+  margin: 12px auto 0 auto;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  font-size: 16px;
+  line-height: 20px;
+}
+.main-content .container .summary {
+  padding: 0 30px 30px 30px;
+  height: 55%;
+  box-sizing: border-box;
+}
+.main-content .container .summary-title {
+  margin: 28px 0;
+  font-size: 19px;
+  font-weight: 600;
+}
+.main-content .container .summary-list-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-bottom: 26px;
+}
+.main-content .container .summary .reaction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: #fff0f0;
+  border-radius: 10px;
+}
+.main-content .container .summary .reaction .text {
+  flex-grow: 1;
+}
+.main-content .container .summary .memory {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: #fff4e0;
+  border-radius: 10px;
+}
+.main-content .container .summary .memory .text {
+  flex-grow: 1;
+}
+.main-content .container .summary .verbal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: #e6fff9;
+  border-radius: 10px;
+}
+.main-content .container .summary .verbal .text {
+  flex-grow: 1;
+}
+.main-content .container .summary .visual {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: #eceefd;
+  border-radius: 10px;
+}
+.main-content .container .summary .visual .text {
+  flex-grow: 1;
+}
+.main-content .container .summary .reaction .text {
+  color: hsl(0, 100%, 67%);
+  font-weight: 700;
+}
+.main-content .container .summary .reaction .value {
+  color: rgba(90, 90, 90, 0.631);
+  font-weight: 700;
+}
+.main-content .container .summary .reaction .value span {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+.main-content .container .summary .memory .text {
+  color: hsl(39, 100%, 56%);
+  font-weight: 700;
+}
+.main-content .container .summary .memory .value {
+  color: rgba(90, 90, 90, 0.631);
+  font-weight: 700;
+}
+.main-content .container .summary .memory .value span {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+.main-content .container .summary .verbal .text {
+  color: hsl(166, 100%, 37%);
+  font-weight: 700;
+}
+.main-content .container .summary .verbal .value {
+  color: rgba(90, 90, 90, 0.631);
+  font-weight: 700;
+}
+.main-content .container .summary .verbal .value span {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+.main-content .container .summary .visual .text {
+  color: hsl(234, 85%, 45%);
+  font-weight: 700;
+}
+.main-content .container .summary .visual .value {
+  color: rgba(90, 90, 90, 0.631);
+  font-weight: 700;
+}
+.main-content .container .summary .visual .value span {
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+.main-content .container .summary .button {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(224, 30%, 27%);
+  border: none;
+  color: hsl(221, 100%, 96%);
+  border-radius: 25px;
+  font-weight: 600;
+}
+.main-content .container .summary .button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-color: white;
+  cursor: pointer;
+}
+.main-content .container .summary .button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-color: white;
+  cursor: pointer;
+}
+
+.attribution {
+  font-family: "HankenGrotesk";
+}
+.attribution a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content .container {
+    position: absolute;
+    inset: 50% 0 0 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 600px;
+    box-shadow: 20px 25px 25px hsla(166, 100%, 37%, 0.153);
+    border-radius: 30px 30px 30px 30px;
+  }
+  .main-content .container .result {
+    width: 50%;
+    height: 100%;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .main-content .container .result-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .main-content .container .result-cycle {
+    width: 160px;
+    height: 160px;
+    margin: 30px auto;
+  }
+  .main-content .container .result-cycle-grade-number {
+    font-size: 56px;
+    margin-bottom: 8px;
+  }
+  .main-content .container .result-cycle-of-grade-number {
+    font-size: 16px;
+  }
+  .main-content .container .result-grade {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .main-content .container .summary {
+    width: 50%;
+    height: 100%;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
+  }
+  .main-content .container .summary-title {
+    margin: 0 0 27px 0;
+    font-size: 19px;
+    font-weight: 700;
+  }
+  .main-content .container .summary .reaction {
+    padding: 12px;
+  }
+  .main-content .container .summary .memory {
+    padding: 12px;
+  }
+  .main-content .container .summary .verbal {
+    padding: 12px;
+  }
+  .main-content .container .summary .visual {
+    padding: 12px;
+  }
+  .main-content .container .summary .button {
+    padding: 15px;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+@media only screen and (min-height: 1024px) {
+  .main-content .container {
+    inset: 30% 0 0 50%;
+  }
+}/*# sourceMappingURL=style.css.map */

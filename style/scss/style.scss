@@ -1,0 +1,280 @@
+// Colors
+// Primary
+$light-red: hsl(0, 100%, 67%);
+$orange-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+
+// Gradients
+$light-slate-blue: hsl(252, 100%, 67%);
+$light-royal-blue: hsl(241, 81%, 54%);
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+@font-face {
+  font-family: HankenGrotesk;
+  src: url(../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+.main-content {
+  .container {
+    display: flex;
+    flex-direction: column;
+    font-family: "HankenGrotesk";
+    height: 100%;
+
+    .result {
+      padding: 25px 25px 40px 25px;
+      background-image: linear-gradient($light-slate-blue, $light-royal-blue);
+      border-radius: 0 0 30px 30px;
+      height: 45%;
+      box-sizing: border-box;
+
+      &-title {
+        text-align: center;
+        font-size: large;
+        color: $light-lavender;
+        font-weight: 600;
+      }
+
+      &-cycle {
+        width: 130px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 27px auto;
+        background-image: linear-gradient($violet-blue, $persian-blue);
+        border-radius: 50%;
+
+        &-grade-number {
+          font-size: 48px;
+          font-weight: 800;
+          color: $white;
+          margin-bottom: 13px;
+        }
+
+        &-of-grade-number {
+          color: darken($light-lavender, 10%);
+          font-size: 13px;
+        }
+      }
+
+      &-grade {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 400;
+        color: $white;
+      }
+
+      &-desc {
+        width: 80%;
+        margin: 12px auto 0 auto;
+        text-align: center;
+        color: $light-lavender;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    .summary {
+      padding: 0 30px 30px 30px;
+      height: 55%;
+      box-sizing: border-box;
+
+      &-title {
+        margin: 28px 0;
+        font-size: 19px;
+        font-weight: 600;
+      }
+
+      &-list-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        margin-bottom: 26px;
+      }
+
+      $summary-colors: (
+        reaction: lighten($light-red, 30%),
+        memory: lighten($orange-yellow, 38%),
+        verbal: lighten($green-teal, 58%),
+        visual: lighten($cobalt-blue, 51%),
+      );
+
+      @each $summary, $color in $summary-colors {
+        .#{$summary} {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px;
+          background-color: $color;
+          border-radius: 10px;
+
+          .text {
+            flex-grow: 1;
+          }
+        }
+      }
+
+      $summary-text-colors: (
+        reaction: $light-red,
+        memory: $orange-yellow,
+        verbal: $green-teal,
+        visual: $cobalt-blue,
+      );
+
+      @each $summary, $color in $summary-text-colors {
+        .#{$summary} {
+          .text {
+            color: $color;
+            font-weight: 700;
+          }
+
+          .value {
+            color: rgba(90, 90, 90, 0.631);
+            font-weight: 700;
+          }
+
+          .value span {
+            font-weight: 800;
+            color: $dark-gray-blue;
+          }
+        }
+      }
+
+      @mixin button-state() {
+        background: linear-gradient($light-slate-blue, $light-royal-blue);
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .button {
+        width: 100%;
+        padding: 20px;
+        background-color: $dark-gray-blue;
+        border: none;
+        color: $pale-blue;
+        border-radius: 25px;
+        font-weight: 600;
+
+        &:hover {
+          @include button-state();
+        }
+
+        &:active {
+          @include button-state();
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-family: "HankenGrotesk";
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content {
+    .container {
+      position: absolute;
+      inset: 50% 0 0 50%;
+      transform: translate(-50%, -50%);
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 430px;
+      width: 600px;
+      box-shadow: 20px 25px 25px hsla(166, 100%, 37%, 0.153);
+      border-radius: 30px 30px 30px 30px;
+
+      .result {
+        width: 50%;
+        height: 100%;
+        border-radius: 30px 30px 30px 30px;
+        padding: 10px 10px 15px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+
+        &-title {
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        &-cycle {
+          width: 160px;
+          height: 160px;
+          margin: 30px auto;
+
+          &-grade-number {
+            font-size: 56px;
+            margin-bottom: 8px;
+          }
+
+          &-of-grade-number {
+            font-size: 16px;
+          }
+        }
+
+        &-grade {
+          font-size: 26px;
+          font-weight: 500;
+        }
+      }
+
+      .summary {
+        width: 50%;
+        height: 100%;
+        padding: 30px 30px 30px 30px;
+        box-sizing: border-box;
+
+        &-title {
+          margin: 0 0 27px 0;
+          font-size: 19px;
+          font-weight: 700;
+        }
+
+        $summary: (reaction, memory, verbal, visual);
+
+        @each $summ in $summary {
+          .#{$summ} {
+            padding: 12px;
+          }
+        }
+
+        .button {
+          padding: 15px;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .main-content {
+    .container {
+      inset: 30% 0 0 50%;
+    }
+  }
+}
