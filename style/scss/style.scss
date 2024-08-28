@@ -221,7 +221,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
           margin: 35px auto;
 
           &-grade-number {
-            font-size: 56px;
+            font-size: 62px;
             margin-bottom: 8px;
           }
 
@@ -245,18 +245,18 @@ $dark-gray-blue: hsl(224, 30%, 27%);
       .summary {
         width: 50%;
         height: 100%;
-        padding: 30px 30px 30px 30px;
+        padding: 35px 35px 35px 35px;
         box-sizing: border-box;
 
         &-title {
-          margin: 0 0 27px 0;
+          margin: 0 0 25px 0;
           font-size: 21px;
           font-weight: 700;
         }
 
         &-list-cont {
-          gap: 17px;
-          margin-bottom: 30px;
+          gap: 16px;
+          margin-bottom: 26px;
         }
 
         $summary: (reaction, memory, verbal, visual);

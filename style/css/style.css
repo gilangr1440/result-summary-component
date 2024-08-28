@@ -225,7 +225,7 @@
     margin: 35px auto;
   }
   .main-content .container .result-cycle-grade-number {
-    font-size: 56px;
+    font-size: 62px;
     margin-bottom: 8px;
   }
   .main-content .container .result-cycle-of-grade-number {
@@ -243,17 +243,17 @@
   .main-content .container .summary {
     width: 50%;
     height: 100%;
-    padding: 30px 30px 30px 30px;
+    padding: 35px 35px 35px 35px;
     box-sizing: border-box;
   }
   .main-content .container .summary-title {
-    margin: 0 0 27px 0;
+    margin: 0 0 25px 0;
     font-size: 21px;
     font-weight: 700;
   }
   .main-content .container .summary-list-cont {
-    gap: 17px;
-    margin-bottom: 30px;
+    gap: 16px;
+    margin-bottom: 26px;
   }
   .main-content .container .summary .reaction {
     padding: 15px;
