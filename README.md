@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/results-summary-component-_RxZiQ7qzJ)
+- Live Site URL: [Add live site URL here](https://gilangr1440.github.io/result-summary-component/)
 
 ## My process
 
@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - [Gilang Ramadhan](https://www.linkedin.com/in/gilangr1440/)
+- Frontend Mentor - [@gilangr1440](https://www.frontendmentor.io/profile/gilangr1440)
+- Instagram - [@gilangr1440](https://www.instagram.com/gilangr1440/)

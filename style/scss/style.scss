@@ -195,8 +195,8 @@ $dark-gray-blue: hsl(224, 30%, 27%);
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      height: 430px;
-      width: 600px;
+      height: 450px;
+      width: 650px;
       box-shadow: 20px 25px 25px hsla(166, 100%, 37%, 0.153);
       border-radius: 30px 30px 30px 30px;
 
@@ -204,7 +204,7 @@ $dark-gray-blue: hsl(224, 30%, 27%);
         width: 50%;
         height: 100%;
         border-radius: 30px 30px 30px 30px;
-        padding: 10px 10px 15px 10px;
+        padding: 25px 20px 35px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -216,9 +216,9 @@ $dark-gray-blue: hsl(224, 30%, 27%);
         }
 
         &-cycle {
-          width: 160px;
-          height: 160px;
-          margin: 30px auto;
+          width: 180px;
+          height: 180px;
+          margin: 35px auto;
 
           &-grade-number {
             font-size: 56px;
@@ -231,8 +231,14 @@ $dark-gray-blue: hsl(224, 30%, 27%);
         }
 
         &-grade {
-          font-size: 26px;
+          font-size: 28px;
           font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        &-desc {
+          font-size: 15px;
+          width: 77%;
         }
       }
 
@@ -244,20 +250,25 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 
         &-title {
           margin: 0 0 27px 0;
-          font-size: 19px;
+          font-size: 21px;
           font-weight: 700;
+        }
+
+        &-list-cont {
+          gap: 17px;
+          margin-bottom: 30px;
         }
 
         $summary: (reaction, memory, verbal, visual);
 
         @each $summ in $summary {
           .#{$summ} {
-            padding: 12px;
+            padding: 15px;
           }
         }
 
         .button {
-          padding: 15px;
+          padding: 16px;
         }
       }
     }
